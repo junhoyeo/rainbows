@@ -1,20 +1,24 @@
-use clap::{AppSettings, Clap};
+use clap::{App, Arg};
 use rand::prelude::*;
 
-#[derive(Clap)]
-#[clap(setting = AppSettings::ColoredHelp)]
-struct Opts {
-    #[clap(long, default_value = "0")]
-    number_of_rainbows: i32,
-}
-
 fn main() {
-    let opts: Opts = Opts::parse();
+    let matches = App::new("rainbows")
+        .arg(Arg::new("number-of-rainbows")
+            .short('n')
+            .long("number-of-rainbows")
+            .value_name("NUMBER")
+            .about("Manually sets the number of rainbows")
+            .default_value("0"))
+        .get_matches();
+
+    let given_number_of_rainbows: i32 = matches
+        .value_of_t("number-of-rainbows")
+        .unwrap_or(0);
     let number_of_rainbows =
-        if opts.number_of_rainbows == 0 {
+        if given_number_of_rainbows == 0 {
             rand::thread_rng().gen_range(1..1000)
         } else {
-            opts.number_of_rainbows as usize
+            given_number_of_rainbows as usize
         };
 
     let verb = if number_of_rainbows > 1 { "are" } else { "is" };
