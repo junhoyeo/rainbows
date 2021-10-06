@@ -2,7 +2,10 @@ use clap::{App, Arg};
 use rand::prelude::*;
 
 fn main() {
-    let matches = App::new("rainbows")
+    let matches = App::new(env!("CARGO_PKG_NAME"))
+        .about(env!("CARGO_PKG_DESCRIPTION"))
+        .author(env!("CARGO_PKG_AUTHORS"))
+        .version(env!("CARGO_PKG_VERSION"))
         .arg(Arg::new("number-of-rainbows")
             .short('n')
             .long("number-of-rainbows")
