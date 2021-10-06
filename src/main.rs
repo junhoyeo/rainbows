@@ -1,6 +1,8 @@
 use clap::{App, Arg};
 use rand::prelude::*;
 
+const MAX_NUMBER_OF_RAINBOWS: u16 = 1000;
+
 fn main() {
     let matches = App::new(env!("CARGO_PKG_NAME"))
         .about(env!("CARGO_PKG_DESCRIPTION"))
@@ -19,10 +21,10 @@ fn main() {
         .unwrap_or(0);
     let number_of_rainbows =
         if given_number_of_rainbows == 0 {
-            rand::thread_rng().gen_range(1..1000)
+            rand::thread_rng().gen_range(1..MAX_NUMBER_OF_RAINBOWS)
         } else {
-            given_number_of_rainbows as usize
-        };
+            given_number_of_rainbows
+        } as usize;
 
     let verb = if number_of_rainbows > 1 { "are" } else { "is" };
     let plurality = if number_of_rainbows > 1 { "s" } else { "" };
