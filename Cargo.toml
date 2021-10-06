@@ -3,7 +3,7 @@ authors = ["Junho Yeo <i@junho.io>"]
 description = "Outputs a random number of 🌈's"
 edition = "2018"
 license = "MIT"
-name = "rainbows-rs"
+name = "rainbows"
 version = "0.1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
