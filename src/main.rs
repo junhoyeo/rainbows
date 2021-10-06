@@ -14,7 +14,7 @@ fn main() {
             .default_value("0"))
         .get_matches();
 
-    let given_number_of_rainbows: i32 = matches
+    let given_number_of_rainbows: u16 = matches
         .value_of_t("number-of-rainbows")
         .unwrap_or(0);
     let number_of_rainbows =
