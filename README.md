@@ -4,6 +4,7 @@ Outputs a random number of 🌈's. Rust implementation of [rainbows](https://git
 [![CI](https://github.com/junhoyeo/rainbows/actions/workflows/ci.yml/badge.svg)](https://github.com/junhoyeo/rainbows/actions/workflows/ci.yml)
 
 ## Random number of 🌈's
+By default, the program will output a random number of rainbows.
 
 ```text
 $ rainbows
@@ -12,6 +13,7 @@ Here are 5 rainbows for you!
 ```
 
 ## Print specific number of 🌈's
+You can pass the `-n` or `--number-of-rainbows` parameter to specify the number of rainbows printed.
 
 ```text
 $ rainbows -n 1
