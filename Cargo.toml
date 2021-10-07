@@ -5,6 +5,8 @@ edition = "2018"
 license = "MIT"
 name = "rainbows"
 version = "0.1.0"
+repository = "https://github.com/junhoyeo/rainbows"
+readme = "README.md"
 
 [[bin]]
 name = "rainbows"
