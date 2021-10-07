@@ -3,6 +3,11 @@ Outputs a random number of 🌈's. Rust implementation of [rainbows](https://git
 
 [![CI](https://github.com/junhoyeo/rainbows/actions/workflows/ci.yml/badge.svg)](https://github.com/junhoyeo/rainbows/actions/workflows/ci.yml)
 
+## 📦 Installation
+1. [Install Rust and Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+2. Run `cargo install rainbows`
+3. `$ rainbows`
+
 ## Random number of 🌈's
 By default, the program will output a random number of rainbows.
 
