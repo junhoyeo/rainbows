@@ -1,4 +1,7 @@
 # Rainbows
+
+<img alt="rainbows-in-actions" src="https://user-images.githubusercontent.com/32605822/136423849-932e688c-cc8b-47c7-8234-b20eb7f5d93a.png" width="256" />
+
 Outputs a random number of 🌈's. Rust implementation of [rainbows](https://github.com/unicorns/rainbows).
 
 [![CI](https://github.com/junhoyeo/rainbows/actions/workflows/ci.yml/badge.svg)](https://github.com/junhoyeo/rainbows/actions/workflows/ci.yml)
