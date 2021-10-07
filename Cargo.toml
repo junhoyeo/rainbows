@@ -4,7 +4,7 @@ description = "Outputs a random number of 🌈's"
 edition = "2018"
 license = "Apache-2.0"
 name = "rainbows"
-version = "0.1.0"
+version = "1.0.0"
 repository = "https://github.com/junhoyeo/rainbows"
 readme = "README.md"
 
