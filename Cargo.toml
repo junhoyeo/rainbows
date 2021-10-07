@@ -7,6 +7,10 @@ name = "rainbows"
 version = "1.0.0"
 repository = "https://github.com/junhoyeo/rainbows"
 readme = "README.md"
+exclude = [
+  ".github/*",
+  ".vscode/*",
+]
 
 [[bin]]
 name = "rainbows"
